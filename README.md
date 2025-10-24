@@ -49,14 +49,31 @@
 
 ---
 
-## Image Assets (필요시 추가 가능)
+## Image Assets
 
-1. 관람객 인식(LiDAR+RGB) 로직 다이어그램 — `assets/visitor_detection.png`
-2. Whisper 대화 흐름(시작/종료 감지) — `assets/whisper_flow.png`
-3. TTS 파이프라인 개념도 — `assets/tts_pipeline.png`
-4. 전시장/키오스크 설치 사진(보유 시) — `assets/exhibit.png`
+### 1) 관람객 인식 (LiDAR + YOLO)
 
----
+<p align="center">
+  <img src="assets/visitor_lidar_yolo.png" width="860"/>
+</p>
+
+### 2) 마이크 전처리 + Whisper + 특수단어 사전
+
+<p align="center">
+  <img src="assets/stt_whisper_flow.png" width="860"/>
+</p>
+
+### 3) TTS 생성 및 DB 사전 저장 파이프라인
+
+<p align="center">
+  <img src="assets/tts_db_pipeline.png" width="860"/>
+</p>
+
+### 4) 전시장/홈페이지 설치 사진
+
+<p align="center">
+  <img src="assets/exhibit_install.png" width="860"/>
+</p>
 
 ## Notes
 
