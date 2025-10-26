@@ -17,7 +17,3 @@ segmentation_old.py :
 사람 세그멘테이션 + 배경 + 예전 사진 효과
 
 
-모델 웨이트 (Yolov8) : 
-'/models'
-https://drive.google.com/file/d/1Pa-GpBTtzZt4O8tQlGuawOKMSLSlHFTC/view?usp=sharing
-
