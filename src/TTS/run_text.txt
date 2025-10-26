@@ -1,0 +1,28 @@
+https://github.com/daniilrobnikov/vits2
+
+
+
+python -m preprocess.mel_transform --data_dir datasets/custom_base -c datasets/custom_base/config.yaml
+
+python -m preprocess.mel_transform --data_dir datasets/hee_emotion -c datasets/train_data/config.yaml
+python -m preprocess.mel_transform --data_dir datasets/acriil_emotion -c datasets/train_data/config.yaml
+python -m preprocess.mel_transform --data_dir datasets/dyon -c datasets/train_data/config.yaml
+python -m preprocess.mel_transform --data_dir datasets/hee -c datasets/train_data/config.yaml
+python -m preprocess.mel_transform --data_dir datasets/kss -c datasets/train_data/config.yaml
+python -m preprocess.mel_transform --data_dir datasets/kimgoo -c datasets/train_data/config.yaml
+
+
+
+python -m preprocess.mel_transform --data_dir datasets/hee_emotion -c datasets/emotion/config.yaml
+python -m preprocess.mel_transform --data_dir datasets/acriil_emotion -c datasets/emotion/config.yaml
+
+
+python train.py -c datasets/custom_base/config.yaml -m custom_base  2>&1 | grep -v -e "/usr/" -e "DUMMY3/" -e "./datasets/" -e "/root/"
+
+python train_ms.py -c datasets/r16000/config.yaml -m r16000  2>&1 | grep -v -e "/usr/" -e "DUMMY3/" -e "datasets/" -e "/root/"
+
+
+python train_ms.py -c datasets/actor/config.yaml -m actor  2>&1 | grep -v -e "/usr/" -e "DUMMY3/" -e "datasets/" -e "/root/"
+
+
+python train_ms.py -c datasets/emotion/config.yaml -m emotion
