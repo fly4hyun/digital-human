@@ -23,7 +23,3 @@ reference :
 https://github.com/openai/whisper
 
 
-모델 웨이트 (Yolov8) : 
-'/models'
-https://drive.google.com/file/d/1hzfo2cIBgQGjALK74sxs6kgx5fbr7I0W/view?usp=sharing
-
