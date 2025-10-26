@@ -75,7 +75,3 @@
   <img src="assets/exhibit_install.png" width="860"/>
 </p>
 
-## Notes
-
-* 환부/인물 원본 음성·이미지 등 민감/저작권 데이터는 비공개
-* 본 문서는 구조/방법론/담당범위 수준만 기술
